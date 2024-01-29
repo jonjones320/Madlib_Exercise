@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = "secretkey999"
 debug = DebugToolbarExtension(app)
 
 
-@app.route('/home')
+@app.route('/')
 def home():
     """Displays the homepage with the Madlibs form to fill out"""
 

@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story</title>
-</head>
-<body>
-    <h1>Here is your Madlib:</h1>
+{% extends 'base.html' %}
+
+{% block title %} Madlib Story {% endblock %}
+
+{% block content %}
+
+    <h3>Here is your Madlib:</h3>
     <p>{{ text }}</p>
     
-</body>
-</html>
+{% endblock %}

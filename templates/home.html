@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madlib Home</title>
-</head>
-<body>
-    <h1>MADLIBS</h1>
+{% extends 'base.html' %}
+
+{% block title %} Madlib Home {% endblock %}
+
+{% block content %}
+
     <form action="/story">
 
         {% for prompt in prompts %}
@@ -17,25 +14,7 @@
         {% endfor %}
 
         <button>Submit</button>
+        
     </form>
-</body>
-</html>
 
-
-
-
-<!-- <label for="place">Place:</label>
-<input type="text" name="place">
-<br>        
-<label for="noun">Noun:</label>
-<input type="text" name="noun">
-<br>
-<label for="verb">Verb:</label>
-<input type="text" name="verb">
-<br>
-<label for="adjective">Adjective:</label>
-<input type="text" name="adjective">
-<br>
-<label for="plural_noun">Plural Noun:</label>
-<input type="text" name="plural_noun">
-<br> -->
+{% endblock %}
